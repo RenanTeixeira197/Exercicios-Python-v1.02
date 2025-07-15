@@ -1,13 +1,11 @@
 def LetrasNaPosicaoPar(nome):
-    nome = input("Informe um nome: ")
-    letras = []
+    letras_pares = []
     for i in range(len(nome)):
-        if nome % 2 == 0:
-            letras.append(nome)
-    return nome
+        if i % 2 == 0:  # Verifica se o índice é par
+            letras_pares.append(nome[i])
+    return letras_pares
 
-informar_nome = input("Informe um nome: ")
-
-resultado = LetrasNaPosicaoPar(informar_nome)
-
-print(f'As letras pares no nome {informar_nome} são: {resultado}')
+# Exemplo de uso
+nome = str(input("Digite um nome: "))
+resultado = LetrasNaPosicaoPar(nome)
+print("Letras nas posições pares:", resultado)
