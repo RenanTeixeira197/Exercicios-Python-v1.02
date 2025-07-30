@@ -2,6 +2,7 @@
 
 import urllib
 import urllib.request
+import urllib.error
 
 try:
     site = urllib.request.urlopen("http://www.pudim.com.br")
