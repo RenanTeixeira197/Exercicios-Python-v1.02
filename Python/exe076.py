@@ -15,3 +15,4 @@ quilos = float(input("Informe o peso em quilos (Kg): "))
 resultado = converter(quilos)
 
 print(f'O peso {quilos}Kg convertido para libras: {resultado}Lb ')
+print("-" * 30)
