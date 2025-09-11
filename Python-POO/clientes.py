@@ -1,4 +1,15 @@
 class cliente:
     def __init__(self, n, fone):
-        self.nome = n
-        self.telefone = fone
+        self._nome = n
+        self._telefone = fone
+
+    #metodo get
+
+    def get_nome(self):
+        return self._nome
+    
+
+    #metodo set
+
+    def set_nome(self, nome):
+        self._nome = nome
